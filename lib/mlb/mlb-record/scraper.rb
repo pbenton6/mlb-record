@@ -3,7 +3,7 @@ require 'open-uri'
 
 require_relative './team.rb'
 
-class Scraper
+class MlbRecord::Scraper
     
     def get_page
         Nokogiri::HTML(open("https://www.msn.com/en-us/sports/mlb/teams"))

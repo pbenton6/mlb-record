@@ -1,4 +1,4 @@
-class Team
+class MlbRecord::Team
     
     attr_accessor :name, :record, :conference, :divsion
     

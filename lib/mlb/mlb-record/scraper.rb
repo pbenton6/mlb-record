@@ -18,5 +18,4 @@ class Scraper
             Team.new_from_index(index)
         end
     end
-
 end

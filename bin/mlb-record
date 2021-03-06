@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "./lib/mlb_record/cli.rb"
+require "./lib/mlb_record/version.rb"
+
+MlbRecord::CLI.new.call

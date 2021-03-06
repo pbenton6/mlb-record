@@ -1,0 +1,1 @@
+require 'mlb_record/version'

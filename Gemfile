@@ -1,10 +1,12 @@
-# frozen_string_literal: true
+source 'https://rubygems.org'
+git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
-source "https://rubygems.org"
+ruby '2.6.1'
 
-# Specify your gem's dependencies in mlb-record.gemspec
-gemspec
+gem 'nokogiri'
+gem 'open-uri'
+gem 'pry'
 
-gem "rake", "~> 13.0"
 
-gem "rubocop", "~> 1.7"
+
+

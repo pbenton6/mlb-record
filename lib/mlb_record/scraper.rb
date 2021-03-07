@@ -5,7 +5,7 @@ class MlbRecord::Scraper
     end
 
     def get_teams
-        self.get_page.css("div.teams")
+        self.get_page.css("div.teams li")
     end
 
     def make_teams

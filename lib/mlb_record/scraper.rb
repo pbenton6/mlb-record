@@ -1,9 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
-
-require_relative 'team.rb'
-require_relative 'version.rb'
-
 class MlbRecord::Scraper
     
     def get_page
@@ -16,8 +10,7 @@ class MlbRecord::Scraper
 
     def make_teams
         get_teams.each do |index|
-            Team.new_from_index(index)
+            MlbRecord::Team.new_from_index(index)
         end
     end
-
 end

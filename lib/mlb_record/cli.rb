@@ -32,6 +32,7 @@ class MlbRecord::CLI
             puts ""
             puts "Would you like to learn about another team?"
             puts "Enter 'yes' for more or 'no' to exit"
+            
             input = gets.strip
             if input == "no"
                 exit
@@ -53,7 +54,8 @@ class MlbRecord::CLI
     def team_record(team)
         puts "Team: #{team.fullname}"
         puts "Record: #{team.record}"
-        puts "Link for team schedule: https://www.mlb.com/#{team.nickname}/schedule/" 
+        puts "Team Schedule: https://www.mlb.com/#{team.nickname}/schedule/" 
+        puts "For news, and more detailed information: #{team.team_page}"
     end
 
     def exit

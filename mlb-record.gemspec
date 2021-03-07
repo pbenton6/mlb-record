@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/mlb/record/version"
+require_relative "lib/mlb_record/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "mlb-record"
